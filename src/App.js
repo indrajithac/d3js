@@ -14,9 +14,17 @@ function App() {
       <button onClick={() => setData(data.map((value) => value + 5))}>
         Update data
       </button>
+      <br />
       <button onClick={() => setData(data.filter((value) => value < 35))}>
         Filter data
       </button>
+      <br />
+      <button
+        onClick={() => setData([...data, Math.round(Math.random() * 100)])}
+      >
+        Add data
+      </button>
+      <br />
     </div>
   );
 }
